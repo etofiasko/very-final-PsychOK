@@ -1,0 +1,22 @@
+*{
+    background-color: blanchedalmond;
+    margin: 20px;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 38px;
+}
+.block{
+    clear: right;
+    display: block;
+    border-radius: 15px 15px;
+}
+.IMGblock{
+    float: left;
+    display: block;
+}
+.image{
+    height: 400px;
+    border-radius: 50px 80px;
+}

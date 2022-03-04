@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/77fcf50e40.js" crossorigin="anonymous"></script>
+    <title>PsychOK</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <section id="title">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png">PsychOK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navnav" aria-controls="navnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navnav">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="index.html">Main</a>
+              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#testimonials">Feedbacks</a>
+              <a class="nav-link" href="test.html">Free Test</a>
+              <a class="nav-link" href="#" id="snip2">Consultation</a>
+              <a class="nav-link" href="##" id="drk" onclick="myFunctiondr()">Change Mode</a>
+              <a class="nav-link" href="#top" ><img id="upArrow" style="opacity: 0; width:15px;" src="images/arrowup.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="header">
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>  
+        </div>
+    </nav>
+
+    <div id="myModal2" class="modal">
+
+      <div class="modal-content2">
+        <div class="modal-header">
+          <h2>Register for consultation</h2>
+          <span class="close">&times;</span>
+          
+        </div>
+        <div class="modal-body2">
+          <form action="" method="post" id="myForm">
+            <label style="color:black;">First Name:</label><br>
+            <input type="text" class="input-w" name="first-name"><br>
+            <label style="color:black;">Last Name:</label><br>
+            <input type="text" class="input-w" name="last-name"><br>
+            <label style="color:black;">Phone Number:</label><br>
+            <input type="text" class="input-w" name="phone-number"><br>
+            <label style="color:black;">Contact E-mail:</label><br>
+            <input type="email" class="input-w" name="contact-email"><br><br>
+            <button type="button" id="submitBtn" class="btn btn-success">Submit</button>
+        </form>
+        </div>
+      </div>
+    
+    </div>
+    <div class="container-fluid back-img">
+        <div class="text-image">PSYCHOK</div>
+        <div class="text-image2">PSYCH MEDICINE CLINIC</div>
+    </div>
+</section>
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-heart fa-4x icon"></i><br><br>
+        <h3 class="mousefun">CARING</h3>
+        <p class="feature-p">You are important</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-feather-alt fa-4x icon"></i><br><br>
+        <h3 class="mousefun">CONVENIENT</h3>
+        <p class="feature-p">Feel comfort</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-unlock-alt fa-4x icon"></i><br><br>
+        <h3 class="mousefun">CONFIDENTIAL</h3>
+        <p class="feature-p">You are save</p>
+      </div>
+    </div>
+  </section>
+    <div class="container" id="about_clinic">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <p class="about-clinic my-5 icon"><b>THE PSYCHOK PSYCH MEDICINE CLINIC</b></p>
+          <p class="text-about my-4">EXPERIENCED, CARING & PASSIONATE<br><br>
+          	Our clinicians comprise psychiatrist and therapists who are experienced in their expertise, caring in their approach, passionate in helping their patients and proactively contributing to society. They held clinical leadership positions in the civil service and restructured hospital before entering private service.<br><br>
+          	Adelphi Psych Medicine Clinic provides assessment and mental healthcare for students and adults, we specialise in psychotherapy and medico-legal related issues such as mental capacity affecting legal competency.<br><br>
+          	The clinic offers psychotherapy, an evidence-based therapeutic approach for improving mental health well-being. Psychotherapy is individualized  and may be used together with medication. The types of therapy available include:
+	        </p>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+    <div class="container" style="height: 75px;"></div>
+      <div class="row">
+        <div  class="col-1"></div>
+        <div class="col-3" id="sidebar" >
+          <ul class="ul">
+            <li id="first" class="li"><a class="a" href="##">Play Therapy for Children</a></li>
+            <li id="second" class="li"><a class="a" href="##">Cognitive Behavioral Therapy<a></li>
+            <li id="third" class="li"><a class="a" href="##">Clinical Psychiatry</a></li>
+            <li id="fourth" class="li"><a class="a" href="##">Clinical Hypnosis</a></li>
+            <li id="fifth" class="li"><a class="a" href="##">Mindfulness-Based Cognitive Therapy</a></li>
+          </ul>
+        </div>
+        <div  class="col-1"></div>
+        <div  class="col-6">
+          <div  class="col-1"></div>
+          <div id="change">
+            <p>Children learn to understand the world and their place in it through play. It is where they’re free to act out their inner feelings and deepest emotions. Since the child cannot adequately express themselves in the adult world, the therapist joins the child in their world, on their level. As they play, the child may become less guarded and more apt to share their feelings. But they aren’t pressured. They’re allowed to do so in their own time and with their own method of communication. Play therapy will differ depending on the therapist and the particular needs of the child. To begin, the therapist may want to observe the child at play. They may also want to conduct separate interviews with the child, parents, or teachers. After a thorough assessment, the therapist will set some therapeutic goals, decide on what limits may be necessary, and formulate a plan for how to proceed. Much can be revealed in how a child interacts with different types of toys and how their behavior changes from session to session. They may use play to act out fears and anxieties, as a soothing mechanism, or to heal and problem-solve. Each child is different, so therapy will be tailored to their individual needs. As therapy progresses, behaviors and goals can be reassessed. It can help teach conflict resolution, promote healing, and improve family dynamics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="height: 75px;"></div>
+      <figure class="IMGblock">
+        <figcaption>Play to learn more about psychotherapy</figcaption><br>
+        <audio
+            controls
+            src="sounds/What-is-Psychotherapy.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+    <div class="container" style="height: 75px;"></div>
+<div class="container-fluid" id="comfort">
+        <div class="row">
+            <div class="col-6">
+                <div id="carousel_comfort" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="clinic-images/comfort/1.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="clinic-images/comfort/2.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="clinic-images/comfort/3.jpg" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_comfort" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_comfort" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-4">
+              <div class="clinic_name icon">DESIGNED FOR YOUR COMFORT</div><br>
+              <div class="div text_and_image">The clinic is designed with the comfort of our patients and clients in mind. We are aware of the costs of living and decided to keep our charges affordable. A typical consultation cost $160. First consultation and psychotherapy session may cost more depending on complexity and duration.</div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="container" style="height: 150px;"></div>
+    <div class="container-fluid center-container" id="society">
+      <div class="row" style="height: 50px;"></div>
+      <div class="row">
+          <div class="col-1"></div>
+          <div class="col-4">
+            <div class="clinic_name" style="color:white">HELPING SOCIETY</div><br>
+            <div class="div text_and_image" style="color:white">PSYCHOK Psych Medicine Clinic is a corporate partner of The Best Psycho Clinic Of The World where we volunteer. We are a firm supporter of the People for People, which provides legal help for needy persons.</div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-6">
+              <div id="carousel_society" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="clinic-images/society/1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="clinic-images/society/2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="clinic-images/society/3.jpg" class="d-block w-100">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel_society" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel_society" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </div>
+        <div class="row" style="height: 50px;"></div>
+      </div>
+    </div>
+    <div class="container" style="height: 150px;"></div>
+    <div class="container-fluid" id="consultation">
+      <div class="row">
+          <div class="col-6">
+              <div id="carousel_consultation" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="clinic-images/consultation/1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="clinic-images/consultation/2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="clinic-images/consultation/3.jpg" class="d-block w-100">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel_consultation" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel_consultation" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-4">
+            <div class="clinic_name icon">ARRANGE FOR A CONSULTATION</div><br>
+            <div class="div text_and_image">Consultation for students, teenagers, soldiers, adults and the elderly are easily arranged, call us at 8 (800) 555 35 35 for an appointment.</div>
+          </div>
+          <div class="col-1"></div>
+      </div>
+    </div>
+    <section id="testimonials">
+      <h3 class="feed icon">Feedbacks</h3>
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <img src="clinic-images/patients/1.jpg" class="avatar rounded-circle"><br><br>
+          <h3>Cool</h3>
+          <p class="feature-p">The clinic helped me to fulfill my life :)</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <img src="clinic-images/patients/2.jpg" class="avatar rounded-circle"><br><br>
+          <h3>Reliable</h3>
+          <p class="feature-p">I could not even imagine I can rely on them so easy</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <img src="clinic-images/patients/3.jpg" class="rounded-circle avatar"><br><br>
+          <h3>Helpful</h3>
+          <p class="feature-p">They are my savers!</p>
+        </div>
+      </div>
+    </section>
+    <div class="container" style="height: 70px;"></div>
+    <div class="container-fluid footer" style="height: 100px;">
+      <p class="foot"><br>8 (800) 555 35 35<br>
+      psychook@gmail.com<br><br></p>
+    </div>
+    <script src="scripts/scrindex.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap.js.map"></script>
+    <script src="jqscript.js"></script>
+</body>
+</html>

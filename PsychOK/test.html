@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/77fcf50e40.js" crossorigin="anonymous"></script>
+    <title>PsychOK</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png">PsychOK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navnav" aria-controls="navnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navnav">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="index.html">Main</a>
+              <a class="nav-link" href="index.html">Features</a>
+              <a class="nav-link" href="index.html">Feedbacks</a>
+              <a class="nav-link active" href="test.html">Free Test</a>
+              <a class="nav-link" href="##" id="drk" onclick="myFunctiondr()">Change Mode</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+      <div class="container" style="height: 50px;"></div>
+
+      <div class="container" id="about_clinic">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <p class="about-clinic my-5 icon text-uppercase"><b>Temperament Test</b> <button id="snip" class="btn btn-success">?</button></p>
+
+            <div id="myModal" class="modal">
+
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Temperament Test</h2>
+                  <span class="close">&times;</span>
+                  
+                </div>
+                <div class="modal-body">
+                  <p style="color:black;">This test is fully free and designed to understand person's attitude to the life</p>
+                  <p style="color:black;">To properly understand yourself, we are recommending to visit our clinic!</p>
+                </div>
+              </div>
+            
+            </div>
+
+            <p class="text-about my-4">In psychology, temperament broadly refers to consistent individual differences in behavior that are biologically based and are relatively independent of learning, system of values and attitudes.<br><br>
+                Some researchers point to association of temperament with formal dynamical features of behavior, such as energetic aspects, plasticity, sensitivity to specific reinforcers and emotionality. Temperament traits (such as Neuroticism, Sociability, Impulsivity, etc.) are distinct patterns in behavior throughout a lifetime, but they are most noticeable and most studied in children. Babies are typically described by temperament, but longitudinal research in the 1920s began to establish temperament as something which is stable across the lifespan.<br><br>
+            </p>
+            <p class="about-clinic my-5 icon text-uppercase"><b>Four temperaments model</b></p>
+            <p class="text-about my-4">Historically, in the second century A.D., the physician Galen described four classical temperaments (melancholic, phlegmatic, sanguine and choleric), corresponding to the four humours or bodily fluids. This historical concept was explored by philosophers, psychologists, psychiatrists and psycho-physiologists from very early times of psychological science, with theories proposed by Immanuel Kant, Hermann Lotze, Ivan Pavlov, Carl Jung, Gerardus Heymans among others. In more recent history, Rudolf Steiner had emphasized the importance of the four classical temperaments in elementary education, the time when he believed the influence of temperament on the personality to be at its strongest. Neither Galen nor Steiner are generally applied to the contemporary study of temperament in the approaches of modern medicine or contemporary psychology.<br><br>
+                Some researchers point to association of temperament with formal dynamical features of behavior, such as energetic aspects, plasticity, sensitivity to specific reinforcers and emotionality. Temperament traits (such as Neuroticism, Sociability, Impulsivity, etc.) are distinct patterns in behavior throughout a lifetime, but they are most noticeable and most studied in children. Babies are typically described by temperament, but longitudinal research in the 1920s began to establish temperament as something which is stable across the lifespan.<br><br>
+            </p>
+            <p class="about-clinic my-5 icon text-uppercase"><b>Main types of temperaments are devided as</b></p>
+            <table class="table" style="background-color: white;">
+                <thead>
+                  <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Short Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Choleric</td>
+                    <td>>:(</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Melancholic</td>
+                    <td> :(</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Phlegmatic</td>
+                    <td> :|</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Sanguine</td>
+                    <td> :D</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="about-clinic my-5 icon text-uppercase"><b>To pass the test, calculate the amount of points for answering questions</b></p>
+              <ul class="list-group">
+                <li class="list-group-item">Strongly disagree +5</li>
+                <li class="list-group-item">Disagree +4</li>
+                <li class="list-group-item">Neutral +3</li>
+                <li class="list-group-item">Agree +2</li>
+                <li class="list-group-item">Strongly agree +1</li>
+            </ul>
+            <div class="container" style="height: 100px;"></div>
+            <form action="">
+                <div class="question question1">
+                    <p>
+                        I feel <strong>attacked</strong> by others</p>
+                        <input type="radio" name="answer1" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer1" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer1" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer1" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer1" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                    
+                </div><br>
+                <div class="question question2">
+                    <p>
+                        I <strong>boss</strong> people around </p>
+                        <input type="radio" name="answer2" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer2" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer2" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer2" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer2" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                    
+                </div><br>
+                <div class="question question3">
+                    <p>
+                        I radiate <strong>joy</strong> </p>
+                        <input type="radio" name="answer3" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer3" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer3" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer3" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer3" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question4">
+                    <p>
+                        It takes a lot of abuse to get me <strong>angry</strong> </p>
+                        <input type="radio" name="answer4" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer4" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer4" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer4" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer4" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question5">
+                    <p>
+                        I experience my emotions intensely </p>
+                        <input type="radio" name="answer5" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer5" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer5" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer5" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer5" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question6">
+                    <p>
+                        I have had a dramatic falling out with a friend </p>
+                        <input type="radio" name="answer6" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer6" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer6" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer6" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer6" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question7">
+                    <p>
+                        I am relaxed most of the time </p>
+                        <input type="radio" name="answer7" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer7" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer7" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer7" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer7" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question8">
+                    <p>
+                        I have a strong need for <strong>power</strong> </p>
+                        <input type="radio" name="answer8" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer8" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer8" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer8" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer8" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question9">
+                    <p>
+                        I seldom feel blue </p>
+                        <input type="radio" name="answer9" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer9" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer9" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer9" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer9" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question10">
+                    <p>
+                        I like it when people are scared of me </p>
+                        <input type="radio" name="answer10" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer10" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer10" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer10" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer10" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question11">
+                    <p>
+                        I feel comfortable with myself </p>
+                        <input type="radio" name="answer11" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer11" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer11" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer11" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer11" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                    
+                </div><br>
+                <div class="question question12">
+                    <p>
+                        I seldom get mad </p>
+                        <input type="radio" name="answer12" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer12" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer12" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer12" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer12" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                    
+                </div><br>
+                <div class="question question13">
+                    <p>
+                        I don't care much when people <strong>insult me</strong> </p>
+                        <input type="radio" name="answer13" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer13" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer13" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer13" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer13" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question14">
+                    <p>
+                        I dance when I am <em>alone</em>  </p>
+                        <input type="radio" name="answer14" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer14" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer14" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer14" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer14" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question15">
+                    <p>
+                        I feel my anxiety overwhelms me </p>
+                        <input type="radio" name="answer15" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer15" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer15" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer15" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer15" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question16">
+                    <p>
+                        I prefer variety to <em>routine</em> </p>
+                        <input type="radio" name="answer16" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer16" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer16" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer16" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer16" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question17">
+                    <p>
+                        The good life is a peaceful life </p>
+                        <input type="radio" name="answer17" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer17" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer17" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer17" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer17" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question18">
+                    <p>
+                        I tend to feel very <em>hopeless</em> </p>
+                        <input type="radio" name="answer18" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer18" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer18" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer18" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer18" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                    
+                </div><br>
+                <div class="question question19">
+                    <p>
+                        I try to please everyone </p>
+                        <input type="radio" name="answer19" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer19" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer19" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer19" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer19" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question20">
+                    <p>
+                        I try to outdo others </p>
+                        <input type="radio" name="answer20" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer20" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer20" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer20" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer20" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question21">
+                    <p>
+                        I get <strong>angry</strong> easily </p>
+                        <input type="radio" name="answer21" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer21" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer21" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer21" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer21" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question22">
+                    <p>
+                        I make people feel welcome </p>
+                        <input type="radio" name="answer22" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer22" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer22" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer22" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer22" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question23">
+                    <p>
+                        I make friends easily </p>
+                        <input type="radio" name="answer23" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer23" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer23" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer23" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer23" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                     
+                </div><br>
+                <div class="question question24">
+                    <p>
+                        I am the life of the party </p>
+                        <input type="radio" name="answer24" value="StronglyDisagree" onclick="ans1()"> Strongly disagree <br>
+                        <input type="radio" name="answer24" value="Disagree" onclick="ans2()"> Disagree <br>
+                        <input type="radio" name="answer24" value="Neutral" onclick="ans3()"> Neutral <br>
+                        <input type="radio" name="answer24" value="Agree" onclick="ans4()"> Agree <br>
+                        <input type="radio" name="answer24" value="StronglyAgree" onclick="ans5()"> Strongly agree <br>
+                </div>
+            </form>
+            <p class="about-clinic my-5 icon text-uppercase"><b>Click the box below</b></p>
+            <div class="IMGblock">
+            <button id="myBtn" type="button" class="btn btn-success">Show result</button>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+      <div class="container" style="height: 70px;"></div>
+      <div class="container-fluid footer" style="height: 100px;">
+        <p class="foot"><br>8 (800) 555 35 35<br>
+        psychook@gmail.com<br><br></p>
+      </div>
+      <audio id="xyz" src="sounds/tada-sound.mp3" preload="auto"></audio>
+      <script src="scripts/scrtest.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap.js.map"></script>
+</body>
+</html>
